@@ -1,0 +1,52 @@
+body {
+   background-color: rgb(30,30,30);
+   overflow-x: hidden;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 250px;
+  transform: scale(1.75); /* Scale everything by 1.5 */
+}
+
+.item {
+   display: flex;
+}
+
+.item button{
+   width: 50px;
+   height: 50px;
+   font-size: 20px;
+   text-align: center;
+   color: white;
+   background-color: rgb(45,45,45);
+   font-weight: bold;
+   /*border-radius: 30px; */
+ }
+
+ .orange button{
+   background-color: orange;
+   border-color: orange;
+ }
+
+ .lightGrey button {
+   background-color: lightgrey;
+   border-color: lightgray;
+ }
+
+ .result {
+   display: flex;
+   justify-content: right;
+   align-items: center;
+   width: 193px; /*200-1-5- 1 for some reason = 193*/
+   height: 50px;
+   color: white;
+   border: 1px solid;
+   font-size: 40px;
+   padding-top: 20px;
+   padding-right: 5px;
+ }
+
