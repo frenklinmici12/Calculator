@@ -19,12 +19,14 @@ btns.forEach((button) => {
          //setOperator(button.textContent);
       }
       else if(button.textContent == "=") {
+
+         answerWindow.textContent = eval(currVal);
          //performCalculation();
          //  should be something like take in currVal, make substr of the stuff 
          //  on the left of the operator, and the stuff on the right, thats your number 1 and number 2, 
          // then calculate but idk yet how id do multiple operations at once (maybe recursion?)
       }
-      else {
+      else { //if its a digit
          let currVal = button.textContent;
          answerWindow.textContent += currVal;
       }
