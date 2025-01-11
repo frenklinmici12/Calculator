@@ -22,7 +22,12 @@ btns.forEach((button) => {
       }
       else if(button.textContent == "=") {
 
-         answerWindow.textContent = eval(answerWindow.textContent);
+         try {
+            answerWindow.textContent = eval(answerWindow.textContent);
+         }
+         catch(error) {
+            answerWindow.textContent = "Error";
+         }
          //performCalculation();
          //  should be something like take in currVal, make substr of the stuff 
          //  on the left of the operator, and the stuff on the right, thats your number 1 and number 2, 
